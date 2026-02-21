@@ -8,9 +8,7 @@ This project was created as part of the Responsive Web Design Certification from
 
 ## 🚀 Live Demo
 
-(After enabling GitHub Pages, paste your live link here)
-
----
+https://ishamore1723.github.io/survey-form/
 
 ## ✨ Features
 
@@ -23,7 +21,6 @@ This project was created as part of the Responsive Web Design Certification from
 - ✅ Footer Section
 - ✅ Form Validation using HTML5
 
----
 
 ## 🛠️ Built With
 
@@ -33,7 +30,6 @@ This project was created as part of the Responsive Web Design Certification from
 - Media Queries
 - JavaScript (Form Handling)
 
----
 
 ## 📂 Project Structure
 survey-form/
@@ -42,9 +38,6 @@ survey-form/
 │── README.md
 
 
-
-
----
 
 ## 🎯 What I Learned
 
@@ -55,25 +48,9 @@ survey-form/
 - Building responsive layouts
 - Managing and uploading projects to GitHub
 
----
 
 ## 👩‍💻 Author
 
 **Isha More**  
 First Year IT Student  
-
----
-
-## 📸 Screenshot
-
-(Add a screenshot of your project here later)
-
-Example:
-
-
-
-
-
----
-
 ⭐ If you like this project, feel free to give it a star!
