@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Student Feedback Survey</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <div class="container">
+
+    <h1 id="title">Student Feedback Survey</h1>
+
+    <p id="description">
+      Please fill out this survey to help us improve our learning experience.
+    </p>
+
+    <form id="survey-form">
+
+      <div class="form-group">
+        <label id="name-label" for="name">Name</label>
+        <input type="text" id="name" placeholder="Enter your full name" required>
+      </div>
+
+      <div class="form-group">
+        <label id="email-label" for="email">Email</label>
+        <input type="email" id="email" placeholder="Enter your email address" required>
+      </div>
+
+      <div class="form-group">
+        <label id="number-label" for="number">Age</label>
+        <input type="number" id="number" min="10" max="60" placeholder="Enter your age">
+      </div>
+
+      <div class="form-group">
+        <label for="dropdown">Which option best describes you?</label>
+        <select id="dropdown">
+          <option value="">Select an option</option>
+          <option value="student">Student</option>
+          <option value="professional">Professional</option>
+        </select>
+      </div>
+
+      <div class="form-group">
+        <p>Would you recommend this course?</p>
+        <label><input type="radio" name="recommend" value="yes"> Yes</label>
+        <label><input type="radio" name="recommend" value="no"> No</label>
+      </div>
+
+      <div class="form-group">
+        <p>What topics are you interested in?</p>
+        <label><input type="checkbox" value="html"> HTML</label>
+        <label><input type="checkbox" value="css"> CSS</label>
+        <label><input type="checkbox" value="javascript"> JavaScript</label>
+      </div>
+
+      <div class="form-group">
+        <p>Additional Comments</p>
+        <textarea rows="4" placeholder="Enter your comments here..."></textarea>
+      </div>
+
+      <button id="submit" type="submit">Submit</button>
+
+      <!-- Success Message -->
+      <p id="success-message"></p>
+
+    </form>
+
+  </div>
+
+  <footer>
+    <p>© 2026 Isha More | Built with HTML, CSS & JS</p>
+  </footer>
+
+  <script>
+    const form = document.getElementById("survey-form");
+    const successMessage = document.getElementById("success-message");
+
+    form.addEventListener("submit", function(event) {
+      event.preventDefault();
+
+      successMessage.textContent = "✅ Your response has been recorded successfully!";
+      successMessage.style.display = "block";
+
+      form.reset();
+
+      setTimeout(() => {
+        successMessage.style.display = "none";
+      }, 3000);
+    });
+  </script>
+
+</body>
+</html>
